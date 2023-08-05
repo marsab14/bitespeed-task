@@ -16,7 +16,7 @@ class MongoDatabase {
         return this.instance;
     }
 
-    connect() {
+    async connect() {
         mongoose.set('strictQuery', true)
         mongoose.connect(url, {
             //useNewUrlParse: true,
@@ -36,5 +36,6 @@ class MongoDatabase {
     }
 
 }
+
 
 module.exports = MongoDatabase

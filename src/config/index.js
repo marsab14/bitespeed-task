@@ -11,5 +11,10 @@ module.exports = {
     },
     mongodb: {
         url: process.env.MONGODB_URL
+    },
+    jwt: {
+        tokenSecret: process.env.HS256_TOKEN_SECRET,
+        accessTokenExpiration: process.env.ACCESS_TOKEN_EXPIRETION,
+        refreshTokenExpiration: process.env.REFRESH_TOKEN_EXPIRETION
     }
 }

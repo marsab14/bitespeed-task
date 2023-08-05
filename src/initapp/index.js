@@ -2,8 +2,8 @@
 const  MongoDatabase  = require('../common/database/mongodb')
 
 const init = async () => {
-   // const mongoConnection = new MongoDatabase();
-    //mongoConnection.connect();
+   const mongoConnection = new MongoDatabase();
+    await mongoConnection.connect();
 
 
     process.
