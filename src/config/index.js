@@ -16,5 +16,13 @@ module.exports = {
         tokenSecret: process.env.HS256_TOKEN_SECRET,
         accessTokenExpiration: process.env.ACCESS_TOKEN_EXPIRETION,
         refreshTokenExpiration: process.env.REFRESH_TOKEN_EXPIRETION
-    }
+    },
+    postgres: {
+        url: process.env.POSTGRES_URL,
+        username: process.env.POSTGRES_USERNAME,
+        password: process.env.POSTGRES_PASSWORD,
+        database: process.env.POSTGRES_DATABASE,
+        port: process.env.POSTGRES_PORT,
+        host: process.env.POSTGRES_HOST
+    }, 
 }

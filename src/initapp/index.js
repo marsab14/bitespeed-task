@@ -1,10 +1,12 @@
 
-const  MongoDatabase  = require('../common/database/mongodb')
+const  MongoDatabase  = require('../common/database/mongodb');
+const { testDbConnection } = require('../common/database/postgres');
+
 
 const init = async () => {
    const mongoConnection = new MongoDatabase();
     await mongoConnection.connect();
-
+    await testDbConnection()
 
     process.
             on('unhandledRejection', (reason) => {
