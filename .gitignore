@@ -1,4 +1,4 @@
 node_modules
-.lcl.env
-.dev.env
-.prd.env
+/.lcl.env
+/.dev.env
+/.prd.env
