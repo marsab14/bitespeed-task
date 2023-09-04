@@ -27,6 +27,7 @@ InitApp(app).then(() => {
   app.use(cors());
 
   /* Routes */
+  
     app.use(config.node.pathPrefix, router)
   /* Routes */
 
@@ -54,3 +55,5 @@ InitApp(app).then(() => {
     console.log(`Base URL :: ${config.node.url}${config.node.pathPrefix}`);
   });
 });
+
+module.exports = app

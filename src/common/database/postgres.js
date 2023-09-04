@@ -2,6 +2,8 @@ const { Sequelize } = require("sequelize");
 const config = require("../../config");
 const { url } = config.postgres;
 
+console.log("url is", url)
+
 const sequelize = new Sequelize(url);
 
 const testDbConnection = async () => {
