@@ -18,7 +18,6 @@ const getContacts = async (data) => {
       phoneNumber,
       email,
     });
-    console.log("length is", allPrimaryEntries.length)
     if (allPrimaryEntries.length === 0) {
       //no previous entry present, create a new entry
       let objToCreate = {
@@ -50,7 +49,6 @@ const getContacts = async (data) => {
       primaryEntry = allPrimaryEntries[0];
 
       for (let i = 1; i < allPrimaryEntries.length; i++) {
-        console.log("inside loop")
         allPrimaryEntries[i].linkPrecedence = "secondary";
         allPrimaryEntries[i].linkedId = primaryEntry.id;
         await updateContactById(allPrimaryEntries[i]);
