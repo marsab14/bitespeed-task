@@ -4,7 +4,7 @@ const { url } = config.postgres;
 
 console.log("url is", url)
 
-const sequelize = new Sequelize(url);
+const sequelize = new Sequelize(url, {logging: false});
 
 const testDbConnection = async () => {
   try {

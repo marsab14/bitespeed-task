@@ -4,4 +4,11 @@ let person = {
 }
 
 arr = [person.phoneNumber ?? 'N/A']
-console.log(arr)
+
+let one = 1;
+let two = 1;
+if(one && two) {
+    console.log("first")
+} else {
+    console.log("second")
+}
